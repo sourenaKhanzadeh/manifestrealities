@@ -1,0 +1,540 @@
+/*Body*/
+html {
+    height: 100%;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Crimson Text', serif; */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('Images/wood texture.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Manifest{
+  font-size: 20pt;
+}
+.pull-right{
+  float: right;
+}
+.signIn{
+  background-color: #777777;
+  border: none;
+  color: #343A40FF;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+.signIn:hover{
+  background-color: rgba(255,255,255,0.7);
+}
+#myNav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+/*BodyEnd*/
+
+/* Account Setting Form*/
+.myform{
+  margin: 10% 25% 10% 25%;
+  border: 1px solid #888;
+  background-color: #FFFFFFAA;
+}
+.myform label{
+  margin-left: 10px;
+}
+.myform input[type=text], .myform input[type=password]
+, .myform input[type=email]{
+  width: 95%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.myform input[type=submit]{
+  border: none;
+  background-color: #00bb6688;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  width: 95%;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+}
+.myform input[type=submit]:hover{
+  background-color: #00bb66ff;
+
+}
+/*FormsEnd*/
+
+/*Global Form*/
+.model{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+}
+@keyframes scaleAndRot {
+  from {transform: scale(0.01,0.01);
+   /* Standard syntax */}
+  to {transform: scale(1,1);}
+}
+.GlobalForm{
+  /* Modal Content/Box */
+  background-color: #343A40FF;
+  color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+  animation-name: scaleAndRot;
+  animation-duration: 1s;
+}
+.float-left{
+  float: left;
+}
+.model input[type=text], .model input[type=password], .model input[type=email]{
+  width: 100%;
+}
+.model input[type=submit]{
+  width: 100%;
+  background-color: #4CAF50;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.model input[type=submit]:hover{
+  background-color: rgba(0, 100, 0, 0.5);
+}
+.cancel{
+  background-color: #f41316;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.cancel:hover{
+  background-color: rgba(100, 0, 0, 0.5);
+}
+.avatar{
+  text-align: center;
+  margin: 24px auto 12px auto;
+  position: relative;
+  border-radius: 100%;
+  height: 75%;
+  width: 75%;
+}
+.model .last{
+  margin: 20px 0 20px 0 ;
+}
+.model span{
+  float: right;
+}
+.signup:hover{
+  text-decoration: none;
+}
+.signup div{
+  width: 100%;
+  background-color: #4CAF50;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.signup div:hover{
+  background-color: #4CAF50bb;
+}
+.log{
+  width: 100%;
+  background-color: #4CAF50;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px
+}
+.log:hover{
+  background-color: #4CAF50bb;
+}
+/*Global Form End*/
+
+
+/*Columns and Rows*/
+/* Create two equal columns that floats next to each other */
+.img video{
+  width: 100%;
+}
+.img .vidOver{
+  width: 100vw;
+  height: 850px;
+  background-color: #000000AA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 65px;
+}
+.img .vidCont{
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  margin: auto 15% auto 15%;
+  color: white;
+  text-align: center;
+}
+.img .vidCont button{
+  background-color: #343A4000;
+  color: #F1F1F1;
+  border: 3px solid #F1F1F1;
+  padding: 10px;
+  font-size: 20pt;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: border-radius 0.25s ease-in-out;
+}
+.img .vidCont button:hover{
+  border-radius: 40px;
+  border-color: #DDBC95;
+}
+.img h1{
+  border: 5px solid white;
+  padding: 10px;
+  font-size: 65pt;
+  margin-bottom: 35px;
+}
+.column-3{
+  margin-top: 43px;
+  float: left;
+  width: 33.3333333%;
+  padding: 10px;
+  height: 300px;
+  /*border: 2px solid #343A40FF;*/
+   /* Should be removed. Only for demonstration */
+}
+.column-mid{
+  margin: 0 auto 0 auto;
+  /* width: 50%; */
+}
+.column-2{
+    float: left;
+    height: 600px;
+    width: 14%;
+}
+.column-4{
+  float: left;
+  height: 600px;
+  width: 72%;
+}
+.column-1{
+    float: right;
+    border: 2px solid #343A40FF;
+    height: 600px;
+    width: 33%;
+}
+.row-2:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Columns and Rows End*/
+
+
+/*Content*/
+.subHead-3{
+    border: 5px solid white;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 80px;
+}
+.subHead-2{
+  background-color: rgb(201, 190, 190);
+  font-size: 20pt;
+  text-align: center;
+  z-index: -1;
+  text-shadow: -2px -2px #cccccc;
+  padding-top:25%;
+  padding-bottom:25%;
+}
+canvas{
+  top: 0;
+  position: fixed;
+  z-index: -2;
+}
+/*Content End*/
+
+/* Chatroom */
+.chatBox{
+  margin: 50px 15% 10px 15%;
+  background-color: #ffffff00;
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: #000;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+.chatBox #msg-box{
+  width: calc(100% - 10px);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.chatBox #msg-txt{
+  width: calc(100% - 10px);
+  border-radius: 15px;
+  border-color: #f1f1f1;
+  color: white;
+  background: transparent;
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.chatBox #msg-txt::placeholder{
+  color: white;
+}
+.chat-submit{
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  background-color: #00000000;
+  border: 2px solid #f1f1f1;
+  color: white;
+  float: right;
+  margin-bottom: 20px;
+  transition: border-radius 0.25s ease-in-out;
+}
+.chat-submit:hover{
+  border-radius: 40px;
+  border-color: #DDBC95;
+}
+.chat-left{
+  background-color: #ADADA000;
+  color: #ffffff;
+  border-color: white;
+  word-wrap: break-word;
+}
+.chat-left h6{
+  float: right;
+  margin-right: 10px;
+}
+.chat-red{
+  background-color: #ADADA000;
+  color: #ffffff;
+  border-color: white;
+  word-wrap: break-word;
+}
+/*  Chatroom end*/
+
+/* Direct Messaging Box */
+.MsgBox{
+  float: right;
+  background-color: #343A40AA;
+  width: 400px;
+  height: 100%;
+  margin-right:-400px;
+  overflow-y: auto;
+  transition: margin-right 2s ease-in-out;
+}
+.MsgBox:hover{
+  margin-right: 0px;
+}
+.MsgBox h2{
+  color: #f1f1f1;
+  text-align: center;
+  margin: 45px;
+}
+.MsgBox hr{
+  border-color: white;
+}
+.MsgBox .profilePic{
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  border: 2px solid white;
+  margin-left: calc(50% - (100px/2));
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.MsgBox .flash{
+  width: 100px;
+  background-color: #343A40AA;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 250px;
+  margin-left: -100px;
+  position: absolute;
+}
+.MsgBox .flash i{
+  margin-top: 35%;
+  margin-left: 10%;
+  font-size: 50pt;
+  color: white;
+}
+/* Direct Messaging Box end*/
+
+/* Member List */
+.memberL{
+  margin: 50px 15% 10px 15%;
+  background-color: #ffffff00;
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: #000;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+.memberL .user{
+  color: white;
+  margin: 25px;
+  margin-left: 110px;
+}
+.memberL hr{
+  border-color: white;
+}
+.memberL .profilePic{
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  border: 2px solid white;
+}
+.memberL .add{
+  color: #f1f1f1;
+  float: right;
+  cursor: pointer;
+  font-size: 20pt;
+  background-color: #00000000;
+  border: none;
+}
+/* Member List end*/
+
+/* PENDING PAGE */
+.profilePicPending{
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  border: 2px solid white;
+}
+.profilePicPending .user{
+  color: white;
+  margin: 25px;
+  margin-left: 110px;
+}
+.pending{
+  float: right;
+  color: #f1f1f1;
+  font-size: 15pt;
+  margin-right: 10px;
+}
+table{
+  width: 100%;
+  margin-left: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+table .Box{
+  color: white;
+  background-color: #00000000;
+  border: 1px solid #F1F1F1;
+  cursor: pointer;
+  padding: 30px;
+  transition: border-radius 0.25s ease-in-out;
+}
+table .Box:hover{
+  border-radius: 40px;
+  border-color: #DDBC95;
+}
+/* PENDING PAGE END */
+
+/* AccountProfile */
+.AccountProfile{
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 20%;
+  height: 273px;
+  border: 2px solid #F1F1F1;
+  border-bottom: none;
+  margin: 25px;
+}
+.AccountProfile .AccountProfilePic{
+  margin-top: 20px;
+  border: 2px solid #F1F1F1;
+  border-radius: 360px;
+  height: 100px;
+  width: 100px;
+  margin-left: calc(20% + 50px);
+}
+.AccountProfile .AccountBio{
+  width: 100%;
+  background-color: #00000000;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+}
+.AccountProfile .AccountBio::placeholder{
+  color: #f1f1f1;
+}
+.AccountProfile label{
+  color: #f1f1f1;
+  font-size: 20pt;
+}
+/* AccountProfile end */
+
+/* AboutUS */
+.aboutUs{
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 25pt;
+  margin-top: 10%;
+}
+.aboutUs h1{
+  font-size: 40pt;
+}
+/* AboutUS end */
+
+/*Footer*/
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 40px;
+   width: 100%;
+   background-color: #343A40FF;
+   color: white;
+   z-index: 10;
+   text-align: center;
+}
+/*FooterEnd*/
+
+/* Mobile view */
+
+@media only screen and (max-width: 600px) {
+  .column-mid{
+    width: 100%;
+  }
+  .column-4{
+    width: 100%;
+    height: 100%;
+  }
+  .column-2{
+    width: 100%;
+  }
+  .subHead-3{
+    font-size: 15pt;
+  }
+}
